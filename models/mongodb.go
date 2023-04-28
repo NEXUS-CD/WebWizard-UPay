@@ -1,7 +1,8 @@
 package models
 
 import (
-	"github.com/NEXUS-CD/UPay/database"
+	"UPay/database"
+
 	"go.mongodb.org/mongo-driver/mongo"
 )
 

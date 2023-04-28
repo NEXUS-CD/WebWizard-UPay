@@ -5,10 +5,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/NEXUS-CD/UPay/configs"
-	"github.com/NEXUS-CD/UPay/database"
-	"github.com/NEXUS-CD/UPay/logger"
-	"github.com/NEXUS-CD/UPay/router"
+	"UPay/configs"
+	"UPay/database"
+	"UPay/logger"
+	"UPay/router"
 )
 
 func main() {
@@ -25,7 +25,6 @@ func main() {
 	// 初始化数据库连接
 	database.InitMongoDB()
 	database.InitRedis()
-
 	// 初始化路由
 	r := router.SetupRouter()
 	// 启动服务器

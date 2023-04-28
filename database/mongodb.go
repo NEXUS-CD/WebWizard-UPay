@@ -6,7 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/NEXUS-CD/UPay/configs"
+	"UPay/configs"
+
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

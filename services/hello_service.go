@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/NEXUS-CD/UPay/models"
+	"UPay/models"
 )
 
 func FindUserByID(id string) (*models.User, error) {

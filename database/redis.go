@@ -5,7 +5,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/NEXUS-CD/UPay/configs"
+	"UPay/configs"
+
 	"github.com/go-redis/redis/v8"
 )
 

@@ -53,3 +53,17 @@
 [36mINFO[0m[2023-04-26 23:34:57] [+] 404 |      10.042µs |       127.0.0.1 | GET     /users 
 [36mINFO[0m[2023-04-26 23:35:00] [+] 401 |      37.083µs |       127.0.0.1 | GET     /users/1 
 2023/04/27 01:27:13 Failed to ping MongoDB: server selection error: server selection timeout, current topology: { Type: Unknown, Servers: [{ Addr: mongodb-container:27017, Type: Unknown, Last error: dial tcp: lookup mongodb-container: no such host }, ] }
+2023/04/28 22:10:01 Failed to ping MongoDB: server selection error: server selection timeout, current topology: { Type: Unknown, Servers: [{ Addr: localhost:27017, Type: Unknown, Last error: dial tcp 127.0.0.1:27017: connect: connection refused }, ] }
+2023/04/28 22:10:44 Failed to connect to Redis: dial tcp 127.0.0.1:6379: connect: connection refused
+2023/04/28 22:11:15 Failed to connect to Redis: dial tcp 127.0.0.1:6379: connect: connection refused
+2023/04/28 22:11:33 Failed to connect to Redis: dial tcp 127.0.0.1:6379: connect: connection refused
+2023/04/28 22:12:08 Server is running at http://localhost:8080
+[36mINFO[0m[2023-04-28 22:12:40] [+] 404 |      78.542µs |       127.0.0.1 | GET     /swagger/ 
+[36mINFO[0m[2023-04-28 22:12:40] [+] 404 |       8.125µs |       127.0.0.1 | GET     /favicon.ico 
+[36mINFO[0m[2023-04-28 22:12:46] [+] 200 |     579.583µs |       127.0.0.1 | GET     /swagger/index.html 
+[36mINFO[0m[2023-04-28 22:12:46] [+] 200 |     350.125µs |       127.0.0.1 | GET     /swagger/swagger-ui.css 
+[36mINFO[0m[2023-04-28 22:12:46] [+] 200 |     245.416µs |       127.0.0.1 | GET     /swagger/swagger-ui-standalone-preset.js 
+[36mINFO[0m[2023-04-28 22:12:46] [+] 200 |     1.84175ms |       127.0.0.1 | GET     /swagger/swagger-ui-bundle.js 
+[36mINFO[0m[2023-04-28 22:12:46] [+] 200 |     180.375µs |       127.0.0.1 | GET     /swagger/doc.json 
+[36mINFO[0m[2023-04-28 22:12:46] [+] 200 |      41.333µs |       127.0.0.1 | GET     /swagger/favicon-32x32.png 
+[36mINFO[0m[2023-04-28 22:16:17] [+] 200 |     227.584µs |       127.0.0.1 | GET     /swagger/doc.json 

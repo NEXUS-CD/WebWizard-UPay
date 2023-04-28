@@ -3,7 +3,8 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/NEXUS-CD/UPay/services"
+	"UPay/services"
+
 	"github.com/gin-gonic/gin"
 )
 
