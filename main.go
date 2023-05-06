@@ -11,6 +11,11 @@ import (
 	"UPay/router"
 )
 
+// @title serverkit API
+// @version 1.0
+// @license.name MIT
+// @BasePath /api
+// @tag.name unit
 func main() {
 	configs.GetConfig()
 	// 初始化日志记录器

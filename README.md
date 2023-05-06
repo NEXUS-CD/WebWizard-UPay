@@ -32,3 +32,14 @@
 # 项目启动说明
 1.go mod tidy 下载依赖
 2.vscode启动或者是go run main.go启动
+3.建议vscode启动
+# 开发说明
+0.在main.go写入 swag的tag.name  比如: // @tag.name unit (unit是你的模块名)
+1.先在router文件写入路由
+1.1.userGroup := r.Group("/users")这样是可以理解为声明一个根路由
+1.2	{
+		userGroup.GET("/:id", controllers.GetUser)
+	}这样是可以理解为声明了一个users/:id的路由，并调用controllers下的GetUser函数
+2.进入controllers书写代码逻辑，并记得书写swagger注释，参照其他接口
+3.进入services书写代码逻辑
+4.进入models书写代码逻辑（这里主要是操作数据库）
