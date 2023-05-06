@@ -1,0 +1,13 @@
+server:
+  port: "8080"
+
+mongodb:
+  host: "localhost"
+  port: "27017"
+  database: "my_database"
+
+redis:
+  host: "localhost"
+  port: "6379"
+  password: ""
+  db: 0
