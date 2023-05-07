@@ -43,3 +43,21 @@
 2.进入controllers书写代码逻辑，并记得书写swagger注释，参照其他接口
 3.进入services书写代码逻辑
 4.进入models书写代码逻辑（这里主要是操作数据库）
+
+# 代码开发规范
+1.常量全大写
+2.注释
+3.命名小驼峰
+# 分支名规范
+前缀描述-WW-分支号，列：feat-WW-1
+1.前缀描述:
+  1.1 新功能：feat
+  1.2 缺陷/bug：fix
+  1.3 优化：perf
+  1.4 样式优化：style
+  1.5 文档完善：doc
+# commit规范
+git commit -m "前缀: ww-1@github名 任务描述xxxxx"
+# 推送代码流程
+https://www.yuque.com/yuqueyonghubka1if/piw85r/vbxdn16pnka5sf3l
+
