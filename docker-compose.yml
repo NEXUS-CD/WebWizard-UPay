@@ -9,7 +9,7 @@ services:
       - WebWizard
 
   mongo:
-    image: 'mongo:4.4.3'
+    image: 'mongo:6.0.3'
     container_name: mongo
     ports:
       - '27017:27017'
