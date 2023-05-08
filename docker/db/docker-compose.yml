@@ -15,16 +15,7 @@ services:
       - '27017:27017'
     networks:
       - WebWizard
-  app:
-    container_name: upay-app
-    build: .
-    image: upay
-    ports:
-      - "8080:8080"
-    volumes:
-      - /app/logger
-    networks:
-      - WebWizard
+      
 networks:
     WebWizard:
       driver: bridge
