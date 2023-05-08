@@ -1,0 +1,30 @@
+version: "3"
+services:
+  redis:
+    image: 'redis:latest'
+    container_name: redis
+    ports:
+      - '6379:6379'
+    networks:
+      - WebWizard
+
+  mongo:
+    image: 'mongo:4.4.3'
+    container_name: mongo
+    ports:
+      - '27017:27017'
+    networks:
+      - WebWizard
+  app:
+    container_name: upay-app
+    build: .
+    image: upay
+    ports:
+      - "8080:8080"
+    volumes:
+      - /app/logger
+    networks:
+      - WebWizard
+networks:
+    WebWizard:
+      driver: bridge

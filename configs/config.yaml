@@ -4,7 +4,7 @@ server:
 mongodb:
   host: "localhost"
   port: "27017"
-  database: "my_database"
+  database: "WebWizard"
 
 redis:
   host: "localhost"
