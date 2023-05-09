@@ -12,9 +12,11 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-var mongoInstance *mongo.Database
-var mongoCtx context.Context
-var mongoOnce sync.Once
+var (
+	mongoInstance *mongo.Database
+	mongoCtx      context.Context
+	mongoOnce     sync.Once
+)
 
 func InitMongoDB() {
 	mongoOnce.Do(func() {
