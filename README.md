@@ -30,6 +30,7 @@
   - `hello_service.go`：示例服务代码
 
 # 项目启动说明
+0.go install mvdan.cc/gofumpt@latest
 1.go mod tidy 下载依赖
 2.vscode启动或者是go run main.go启动
 3.建议vscode启动

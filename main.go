@@ -20,7 +20,7 @@ func main() {
 	configs.GetConfig()
 	// 初始化日志记录器
 	logger.InitLogger()
-	logFile, err := os.OpenFile("logger/app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	logFile, err := os.OpenFile("logger/app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0o666)
 	if err != nil {
 		log.Fatalf("打开日志文件失败: %v", err)
 	}

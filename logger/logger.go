@@ -29,12 +29,11 @@ func InitLogger() {
 	log.SetOutput(os.Stdout)
 
 	// 如果需要将日志记录到文件，可以取消下面代码的注释并替换为实际的文件路径
-	logFile, err := os.OpenFile("logger/app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
+	logFile, err := os.OpenFile("logger/app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0o644)
 	if err != nil {
 		log.Fatalf("打开日志文件失败: %v", err)
 	}
 	log.SetOutput(io.MultiWriter(os.Stdout, logFile))
-
 }
 
 func GetLogger() *logrus.Logger {
